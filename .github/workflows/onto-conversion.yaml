@@ -1,6 +1,7 @@
 name: obo2json 
 on: 
   push:
+    branches:
       - develop
 jobs:
   build:
