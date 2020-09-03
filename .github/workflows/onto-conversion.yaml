@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: check out code
         uses: actions/checkout@v2
+      - name: list of files
+        run: ls -lht /github/workflow/
       - name: upload github event payload 
         uses: actions/upload-artifact@v2
         with:
