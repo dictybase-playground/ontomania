@@ -16,7 +16,7 @@ jobs:
           chmod +x github-actions/bin/actions
           echo "::add-path::$GITHUB_WORKSPACE/github-actions/bin"
       - name: create a list of modified obo files 
-        run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} pfc --payload-file ${GITHUB_EVENT_FILE} --include-file-suffix yaml -o ${GITHUB_WORKSPACE}/commited.txt
+        run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} pfc --payload-file ${GITHUB_EVENT_PATH} --include-file-suffix yaml -o ${GITHUB_WORKSPACE}/commited.txt
       - name: Print list of files 
         if: ${{ success() }}
         run: for $f in `cat ${GITHUB_WORKSPACE}/commited.txt`;do echo $f;done
