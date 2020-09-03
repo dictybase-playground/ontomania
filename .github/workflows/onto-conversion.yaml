@@ -15,7 +15,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: push-payload 
-          path: /github/workflow/*json 
+          path: /home/runner/work/_temp/_github_workflow/event.json 
       - name: download and setup path for github action binary
         run: |
           mkdir -p github-actions/bin
