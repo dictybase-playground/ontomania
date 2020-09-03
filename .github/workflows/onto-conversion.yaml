@@ -9,6 +9,11 @@ jobs:
     steps:
       - name: check out code
         uses: actions/checkout@v2
+      - name: upload github event payload 
+        uses: actions/upload-artifact@v2
+        with:
+          name: push-payload 
+          path: $GITHUB_EVENT_PATH 
       - name: download and setup path for github action binary
         run: |
           mkdir -p github-actions/bin
