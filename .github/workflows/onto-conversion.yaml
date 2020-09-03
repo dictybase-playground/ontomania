@@ -10,7 +10,7 @@ jobs:
       - name: check out code
         uses: actions/checkout@v2
       - name: list of files
-        run: ls -lht /github/workflow/
+        run: ls -lht ${GITHUB_EVENT_PATH} 
       - name: upload github event payload 
         uses: actions/upload-artifact@v2
         with:
