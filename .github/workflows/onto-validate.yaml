@@ -9,6 +9,9 @@ jobs:
       - name: check out code
         uses: actions/checkout@v2
       - name: run report 
-        uses: docker://dictybase/ontobot:1.7.5
+        uses: docker://dictybase/ontobot:1.7.6
         with:
           entrypoint: /usr/local/bin/report
+      - name: list files
+        run: ls -lht ${GITHUB_WORKSPACE}/reports
+
