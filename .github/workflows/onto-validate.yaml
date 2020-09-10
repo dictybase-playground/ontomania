@@ -1,0 +1,14 @@
+name: Quality control check on obo files 
+on: 
+  pull_request
+
+jobs:
+  report:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: check out code
+        uses: actions/checkout@v2
+      - name: run report 
+        uses: docker://dictybase/ontobot:1.7.5
+        with:
+          entrypoint: /usr/local/bin/report
