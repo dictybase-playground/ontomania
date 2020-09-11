@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: check out code
         uses: actions/checkout@v2
+      - name: list files in path
+        run: ls -lht ${GITHUB_EVENT_PATH}
       - name: upload pull request payload
         uses: actions/upload-artifact@v2
         with:
