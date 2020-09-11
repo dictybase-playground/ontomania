@@ -9,7 +9,7 @@ jobs:
       - name: check out code
         uses: actions/checkout@v2
       - name: run report 
-        uses: docker://dictybase/ontobot:1.7.6
+        uses: docker://dictybase/ontobot:1.7.7
         with:
           entrypoint: /usr/local/bin/report
       - name: list files
