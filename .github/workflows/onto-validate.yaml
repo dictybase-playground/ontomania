@@ -13,5 +13,6 @@ jobs:
         with:
           entrypoint: /usr/local/bin/report
       - name: list files
+        if:  ${{ failure() }}
         run: ls -lht ${GITHUB_WORKSPACE}/reports
 
