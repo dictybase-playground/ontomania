@@ -11,13 +11,5 @@ jobs:
       - name: upload pull request payload
         uses: actions/upload-artifact@v2
         with:
-          name: pull-request
+          name: pull-request-create
           path: ${{ github.event_path }}
-      - name: run report 
-        uses: docker://dictybase/ontobot:1.7.7
-        with:
-          entrypoint: /usr/local/bin/report
-      - name: list files
-        if:  ${{ failure() }}
-        run: ls -lht ${GITHUB_WORKSPACE}/reports
-
