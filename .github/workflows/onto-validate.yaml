@@ -4,7 +4,7 @@ on:
 jobs:
   report:
     env:
-      REPORT_DIR: ${GITHUB_WORKSPACE}/reports
+      REPORT_DIR: ${{ github.workspace }}/reports
     runs-on: ubuntu-20.04
     steps:
       - name: check out code
@@ -23,5 +23,5 @@ jobs:
           entrypoint: /usr/local/bin/report 
       - name: test report files
         if: ${{ always() }}
-        run: ls -lht ${REPORT_DIR}/
+        run: ls -lht ${GITHUB_WORKSPACE}/reports/ 
 
