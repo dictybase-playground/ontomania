@@ -5,10 +5,13 @@ jobs:
   report:
     env:
       REPORT_DIR: ${{ github.workspace }}/reports
+      COMMIT_LIST_FILE: ${{ github.workspace }}/committed.txt
     runs-on: ubuntu-20.04
     steps:
       - name: check out code
         uses: actions/checkout@v2
+      - name: create report dir
+        run: mkdir -p ${REPORT_DIR}
       - name: download and setup path for github action binary
         run: |
           mkdir -p github-actions/bin
@@ -16,12 +19,12 @@ jobs:
           chmod +x github-actions/bin/actions
           echo "::add-path::$GITHUB_WORKSPACE/github-actions/bin"
       - name: create a list of modified obo files 
-        run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} fc --payload-file ${GITHUB_EVENT_PATH} -o ${GITHUB_WORKSPACE}/committed.txt -e pull-request --ifs yaml
+        run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} fc --payload-file ${GITHUB_EVENT_PATH} -o ${COMMIT_LIST_FILE} -e pull-request --ifs obo
       - name: run obo reporter
-        uses: docker://dictybase/ontobot:1.7.8
+        uses: docker://dictybase/ontobot:1.7.9
         with:
           entrypoint: /usr/local/bin/report 
       - name: test report files
         if: ${{ always() }}
-        run: ls -lht ${GITHUB_WORKSPACE}/reports/ 
+        run: ls -lht ${REPORT_DIR}
 
