@@ -22,5 +22,6 @@ jobs:
         with:
           entrypoint: /usr/local/bin/report 
       - name: test report files
+        if: ${{ always() }}
         run: ls -lht ${REPORT_DIR}/
 
