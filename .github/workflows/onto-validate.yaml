@@ -21,7 +21,7 @@ jobs:
         run: |
            if [ -e ${GITHUB_WORKSPACE}/committed.txt ]
            then
-                cat ${GITHUB_WORKSPACE/committed.txt
+                cat ${GITHUB_WORKSPACE}/committed.txt
            else
                 echo "no file exists"
            fi
