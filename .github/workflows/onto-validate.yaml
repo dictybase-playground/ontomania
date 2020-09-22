@@ -24,7 +24,7 @@ jobs:
       - name: print changed file
         run: cat $COMMIT_LIST_FILE
       - name: run obo reporter
-        uses: docker://dictybase/ontobot:1.7.10
+        uses: docker://dictybase/ontobot:master-1e2d974
         with:
           entrypoint: /usr/local/bin/report 
       - name: test report files
