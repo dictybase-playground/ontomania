@@ -1,9 +1,10 @@
-name: Quality control check on obo files 
 on: 
   pull_request
 
 jobs:
   report:
+    env:
+      REPORT_DIR: ${GITHUB_WORKSPACE}/reports
     runs-on: ubuntu-20.04
     steps:
       - name: check out code
@@ -16,13 +17,10 @@ jobs:
           echo "::add-path::$GITHUB_WORKSPACE/github-actions/bin"
       - name: create a list of modified obo files 
         run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} fc --payload-file ${GITHUB_EVENT_PATH} -o ${GITHUB_WORKSPACE}/committed.txt -e pull-request --ifs yaml
-      - name: print list of files
-        if: ${{ success() }}
-        run: |
-           if [ -e ${GITHUB_WORKSPACE}/committed.txt ]
-           then
-                cat ${GITHUB_WORKSPACE}/committed.txt
-           else
-                echo "no file exists"
-           fi
+      - name: run obo reporter
+        uses: docker://dictybase/ontobot:1.7.6
+        with:
+          entrypoint: /usr/local/bin/report 
+      - name: test report files
+        run: ls -lht ${REPORT_DIR}/
 
