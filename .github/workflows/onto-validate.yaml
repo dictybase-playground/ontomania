@@ -1,3 +1,4 @@
+name: obo file reporter
 on: 
   pull_request
 
@@ -19,7 +20,9 @@ jobs:
           chmod +x github-actions/bin/actions
           echo "::add-path::$GITHUB_WORKSPACE/github-actions/bin"
       - name: create a list of modified obo files 
-        run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} fc --payload-file ${GITHUB_EVENT_PATH} -o ${COMMIT_LIST_FILE} -e pull-request --ifs obo
+        run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} fc --payload-file ${GITHUB_EVENT_PATH} -o ${COMMIT_LIST_FILE} -e pull-request --ifs obo --sd true
+      - name: print changed file
+        run: cat $COMMIT_LIST_FILE
       - name: run obo reporter
         uses: docker://dictybase/ontobot:1.7.9
         with:
