@@ -31,7 +31,7 @@ jobs:
         run: |
           if [ -e ${COMMIT_LIST_FILE} ]
           then
-                body=$(cat ${COMMIT_LIST_FILE}/*.tsv)
+                body=$(cat ${REPORT_DIR}/*.tsv)
                 echo ::set-output name=body::$body
                 echo ::set-output name=has_body::yes
           fi
