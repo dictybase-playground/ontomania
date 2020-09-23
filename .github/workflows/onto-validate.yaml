@@ -21,13 +21,32 @@ jobs:
           echo "::add-path::$GITHUB_WORKSPACE/github-actions/bin"
       - name: create a list of modified obo files 
         run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} fc --payload-file ${GITHUB_EVENT_PATH} -o ${COMMIT_LIST_FILE} -e pull-request --ifs obo --sd true
-      - name: print changed file
-        run: cat $COMMIT_LIST_FILE
       - name: run obo reporter
         uses: docker://dictybase/ontobot:master-d143bf9
         with:
           entrypoint: /usr/local/bin/report 
-      - name: test report files
-        if: ${{ always() }}
-        run: ls -lht ${REPORT_DIR}
+      - name: capture report for comment
+        id: comment-body
+        run: |
+          if [ -e ${COMMIT_LIST_FILE} ]
+          then
+                body=$(cat ${COMMIT_LIST_FILE}/*.tsv)
+                echo ::set-output name=body::$body
+                echo ::set-output name=has_body::yes
+          fi
+      - name: Output failure report in pull request comment
+        if: ${{ failure() && contains(steps.comment-body.outputs.has_body, 'yes') }}
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+           issue-number: ${{ github.event.number }}
+           body: ${{ steps.comment-body.outputs.body }}
+           reactions: '-1'
+      - name: Output success report in pull request comment
+        if: ${{ success() && contains(steps.comment-body.outputs.has_body, 'yes') }}
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+           issue-number: ${{ github.event.number }}
+           body: |
+             ## No errors in ontology report
+           reactions: '+1', hooray, laugh
 
