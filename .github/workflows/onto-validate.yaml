@@ -32,6 +32,9 @@ jobs:
           if [ -e ${COMMIT_LIST_FILE} ]
           then
                 body=$(cat ${REPORT_DIR}/*.tsv)
+                body="${body//'%'/'%25'}"
+                body="${body//$'\n'/'%0A'}"
+                body="${body//$'\r'/'%0D'}"
                 echo ::set-output name=body::$body
                 echo ::set-output name=has_body::yes
           fi
