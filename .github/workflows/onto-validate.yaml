@@ -48,5 +48,5 @@ jobs:
            issue-number: ${{ github.event.number }}
            body: |
              ## No errors in ontology report
-           reactions: '+1', hooray, laugh
+           reactions: hooray, laugh
 
