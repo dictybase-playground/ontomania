@@ -25,32 +25,10 @@ jobs:
         uses: docker://dictybase/ontobot:master-f5c1055
         with:
           entrypoint: /usr/local/bin/report 
-      - name: capture report for comment
+      - name: output report in pull request comment
         if: ${{ always() }}
-        id: comment-body
         run: |
           if [ -e ${COMMIT_LIST_FILE} ]
-          then
-                body=$(cat ${REPORT_DIR}/*.tsv)
-                body="${body//'%'/'%25'}"
-                body="${body//$'\n'/'%0A'}"
-                body="${body//$'\r'/'%0D'}"
-                echo ::set-output name=body::$body
-                echo ::set-output name=has_body::yes
+                then
+                        action --log-level debug -t ${{ secrets.GITHUB_TOKEN }} --owner ${{ github.repository_owner }} -r ${{ github.event.repository.name }} rac -c ${COMMIT_LIST_FILE} -d ${REPORT_DIR} --id ${{ github.event.number }} 
           fi
-      - name: Output failure report in pull request comment
-        if: ${{ failure() && contains(steps.comment-body.outputs.has_body, 'yes') }}
-        uses: peter-evans/create-or-update-comment@v1
-        with:
-           issue-number: ${{ github.event.number }}
-           body: ${{ steps.comment-body.outputs.body }}
-           reactions: '-1'
-      - name: Output success report in pull request comment
-        if: ${{ success() && contains(steps.comment-body.outputs.has_body, 'yes') }}
-        uses: peter-evans/create-or-update-comment@v1
-        with:
-           issue-number: ${{ github.event.number }}
-           body: |
-             ## No errors in ontology report
-           reactions: hooray, laugh
-
