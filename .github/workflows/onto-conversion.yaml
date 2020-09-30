@@ -4,16 +4,52 @@ on:
     branches:
       - develop
 jobs:
-  build:
+  convert:
+    env:
+      COMMIT_LIST_FILE: ${{ github.workspace }}/committed.txt
+      OBOJSON_DIR : ${{ github.workspace }}/obograph-json
+      GITHUB_ACTION_DIR: ${{ github.workspace }}/github-actions/bin
     runs-on: ubuntu-20.04
     steps:
       - name: check out code
         uses: actions/checkout@v2
+      - name: create necessary dirs 
+        run: |
+           mkdir -p ${OBOJSON_DIR}
+           mkdir -p ${GITHUB_ACTION_DIR}
       - name: download and setup path for github action binary
         run: |
-          mkdir -p github-actions/bin
-          curl -L -o github-actions/bin/actions https://github.com/dictybase-docker/github-actions/releases/download/v0.2.4/action_0.2.4_Linux_x86_64
-          chmod +x github-actions/bin/actions
-          echo "::add-path::$GITHUB_WORKSPACE/github-actions/bin"
+          curl -L -o ${GITHUB_ACTION_DIR}/actions https://github.com/dictybase-docker/github-actions/releases/download/v2.1.3/action_2.1.3_Linux_x86_64
+          chmod +x ${GITHUB_ACTION_DIR}/actions
+          echo "::add-path::$GITHUB_ACTION_DIR"
       - name: create a list of modified obo files 
         run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} pfc --payload-file ${GITHUB_EVENT_PATH} -o ${GITHUB_WORKSPACE}/commited.txt
+      - name: run obo to json converter
+        uses: docker://dictybase/ontobot:master-0f8d800
+        with:
+          entrypoint: /usr/local/bin/convert 
+      - name: check for any changes through git
+        id: git_diff
+        run: |
+            echo "::set-output name=git_changes::yes"
+            if git diff-index --quiet HEAD; then echo "::set-output name=git_changes::no"; fi
+      - name: extract user information 
+        if: contains(steps.git_diff.outputs.git_changes, 'yes') 
+        id: user_info
+        uses: actions/github-script@v1
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+              const { data } = await github.users.getByUsername({
+                username: context.payload.sender.login
+              })
+              core.setOutput("name", data.name)
+              core.setOutput("email", data.email)
+      - name: push the new distribution
+        if: contains(steps.git_diff.outputs.git_changes, 'yes') 
+        run: |
+            git config --global user.email ${{ steps.user_info.outputs.email }}
+            git config --global user.name ${{ steps.user_info.outputs.name }}
+            git add obograph-json
+            git commit -a -m 'update obo json files on '$(date +"%m-%d-%Y:%H:%m:%S")
+            git push origin $(git rev-parse --abbrev-ref HEAD)
