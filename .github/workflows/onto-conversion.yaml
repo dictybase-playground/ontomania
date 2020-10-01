@@ -25,7 +25,7 @@ jobs:
       - name: create a list of modified obo files 
         run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} fc --payload-file ${GITHUB_EVENT_PATH} -o ${GITHUB_WORKSPACE}/commited.txt
       - name: run obo to json converter
-        uses: docker://dictybase/ontobot:master-5d2ef49
+        uses: docker://dictybase/ontobot:master-ce6538e
         with:
           entrypoint: /usr/local/bin/convert 
       - name: check for any changes through git
