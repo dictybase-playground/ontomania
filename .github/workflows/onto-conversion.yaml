@@ -34,7 +34,10 @@ jobs:
         id: git_diff
         run: |
             echo "::set-output name=git_changes::no"
-            if ! git diff-index --quiet HEAD; then echo "::set-output name=git_changes::yes"; fi
+            if [ -e ${COMMIT_LIST_FILE} ]
+            then
+                echo "::set-output name=git_changes::yes"
+            fi
       - name: extract user information 
         if: contains(steps.git_diff.outputs.git_changes, 'yes') 
         id: user_info
