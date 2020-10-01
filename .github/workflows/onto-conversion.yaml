@@ -24,8 +24,10 @@ jobs:
           echo "::add-path::$GITHUB_ACTION_DIR"
       - name: create a list of modified obo files 
         run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} fc --payload-file ${GITHUB_EVENT_PATH} -o ${COMMIT_LIST_FILE} --ifs obo --sd true
+      - name: list committed files
+        run: cat ${COMMIT_LIST_FILE}
       - name: run obo to json converter
-        uses: docker://dictybase/ontobot:master-ce6538e
+        uses: docker://dictybase/ontobot:master-df5ef42
         with:
           entrypoint: /usr/local/bin/convert 
       - name: check for any changes through git
