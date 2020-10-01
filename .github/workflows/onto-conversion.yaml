@@ -24,13 +24,11 @@ jobs:
           echo "::add-path::$GITHUB_ACTION_DIR"
       - name: create a list of modified obo files 
         run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} fc --payload-file ${GITHUB_EVENT_PATH} -o ${COMMIT_LIST_FILE} --ifs obo --sd true
-      - name: list committed files
-        run: cat ${COMMIT_LIST_FILE}
       - name: run obo to json converter
-        uses: docker://dictybase/ontobot:master-df5ef42
+        uses: docker://dictybase/ontobot:1.7.12
         with:
           entrypoint: /usr/local/bin/convert 
-      - name: check for any changes through git
+      - name: setup vars for changed files 
         id: git_diff
         run: |
             echo "::set-output name=git_changes::no"
@@ -50,7 +48,7 @@ jobs:
               })
               core.setOutput("name", data.name)
               core.setOutput("email", data.email)
-      - name: push the new distribution
+      - name: push the changed obo json files 
         if: contains(steps.git_diff.outputs.git_changes, 'yes') 
         run: |
             git config --global user.email ${{ steps.user_info.outputs.email }}
