@@ -24,7 +24,7 @@ jobs:
       - name: create a list of modified obo files 
         run: actions --log-level debug -t ${{ secrets.GITHUB_TOKEN }} fc --payload-file ${GITHUB_EVENT_PATH} -o ${COMMIT_LIST_FILE} -e pull-request --ifs obo --sd true
       - name: run obo reporter
-        uses: docker://dictybase/ontobot:1.7.12
+        uses: docker://dictybase/ontobot:1.8.1
         with:
           entrypoint: /usr/local/bin/report 
       - name: output report in pull request comment
