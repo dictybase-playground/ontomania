@@ -13,6 +13,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -30,6 +33,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -44,6 +50,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T11:35:07Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
@@ -61,6 +70,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T11:33:09Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
@@ -81,6 +93,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -95,6 +110,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T11:29:34Z"
@@ -118,6 +136,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T11:22:22Z"
         } ]
@@ -132,6 +153,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -141,6 +165,26 @@
       },
       "type" : "CLASS",
       "lbl" : "TAP-tagged"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000048",
+      "meta" : {
+        "definition" : {
+          "val" : "A strain expressing beta-glucoronidase.",
+          "xrefs" : [ "DDB:pf" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2021-02-25T15:25:30Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "beta-glucoronidase marked"
     }, {
       "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000004",
       "meta" : {
@@ -157,46 +201,15 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T11:21:21Z"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         } ]
       },
       "type" : "CLASS",
       "lbl" : "hygromycin resistant"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000048",
-      "meta" : {
-        "definition" : {
-          "val" : "A strain expressing beta-glucoronidase.",
-          "xrefs" : [ "DDB:pf" ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "pfey"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
-          "val" : "2021-02-25T15:25:30Z"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "beta-glucoronidase marked"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000047",
-      "meta" : {
-        "definition" : {
-          "val" : "A phleomycin resistant strain.",
-          "xrefs" : [ "DDB:pf" ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
-          "val" : "2021-02-25T15:23:39Z"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "pfey"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "phleomycin resistant"
     }, {
       "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000003",
       "meta" : {
@@ -210,6 +223,9 @@
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T11:20:07Z"
         }, {
@@ -219,6 +235,26 @@
       },
       "type" : "CLASS",
       "lbl" : "blasticidin resistant"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000047",
+      "meta" : {
+        "definition" : {
+          "val" : "A phleomycin resistant strain.",
+          "xrefs" : [ "DDB:pf" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2021-02-25T15:23:39Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "phleomycin resistant"
     }, {
       "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000002",
       "meta" : {
@@ -232,6 +268,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -249,6 +288,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -263,6 +305,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T15:09:53Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
@@ -283,6 +328,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -298,6 +346,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T15:08:55Z"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         } ]
@@ -312,6 +363,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -331,6 +385,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T15:04:37Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
@@ -355,10 +412,33 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
       "lbl" : "multiple mutant"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000084",
+      "meta" : {
+        "definition" : {
+          "val" : "Clustered  Regularly  Interspaced Short  Palindromic Repeats and CRISPR-ASsociated protein (Cas); Technology to edit parts of the genome by removing, adding or altering sections of the DNA.",
+          "xrefs" : [ "DDB:pf" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2021-02-25T19:04:07Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "pfey"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "CRISPR/Cas9"
     }, {
       "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000040",
       "meta" : {
@@ -375,29 +455,15 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T14:58:53Z"
         } ]
       },
       "type" : "CLASS",
       "lbl" : "bleomycin resistant"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000084",
-      "meta" : {
-        "definition" : {
-          "val" : "Clustered  Regularly  Interspaced Short  Palindromic Repeats and CRISPR-ASsociated protein (Cas); Technology to edit parts of the genome by removing, adding or altering sections of the DNA.",
-          "xrefs" : [ "DDB:pf" ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
-          "val" : "2021-02-25T19:04:07Z"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "pfey"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "CRISPR/Cas9"
     }, {
       "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000083",
       "meta" : {
@@ -408,6 +474,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T18:52:30Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
@@ -428,6 +497,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T18:49:07Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -440,6 +512,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T12:11:42Z"
         }, {
@@ -460,6 +535,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T12:11:05Z"
         } ]
@@ -476,6 +554,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T12:08:26Z"
@@ -494,12 +575,35 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T12:07:44Z"
         } ]
       },
       "type" : "CLASS",
       "lbl" : "uracil auxotroph"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000015",
+      "meta" : {
+        "definition" : {
+          "val" : "A strain typically isolated from nature and not genetically altered.",
+          "xrefs" : [ "DDB:pf" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2021-02-25T12:05:59Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "natural isolate"
     }, {
       "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000059",
       "meta" : {
@@ -511,29 +615,15 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T17:30:38Z"
         } ]
       },
       "type" : "CLASS",
       "lbl" : "endogenous substitution"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000015",
-      "meta" : {
-        "definition" : {
-          "val" : "A strain typically isolated from nature and not genetically altered.",
-          "xrefs" : [ "DDB:pf" ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "pfey"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
-          "val" : "2021-02-25T12:05:59Z"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "natural isolate"
     }, {
       "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000014",
       "meta" : {
@@ -542,6 +632,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -564,6 +657,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -581,6 +677,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T17:26:35Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -598,6 +697,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T12:00:01Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -615,6 +717,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -632,6 +737,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -649,6 +757,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -663,6 +774,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T15:43:38Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
@@ -681,6 +795,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T11:36:32Z"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         } ]
@@ -697,6 +814,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T15:42:30Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
@@ -715,6 +835,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T15:36:00Z"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         } ]
@@ -731,6 +854,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T15:33:33Z"
@@ -751,6 +877,9 @@
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -768,6 +897,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -798,6 +930,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T14:35:03Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -812,6 +947,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T14:34:09Z"
@@ -830,6 +968,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T12:24:00Z"
         } ]
@@ -844,6 +985,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -871,6 +1015,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -888,10 +1035,17 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T12:20:33Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
       "lbl" : "rescued"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+      "type" : "PROPERTY",
+      "lbl" : "has_obo_namespace"
     }, {
       "id" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000068",
       "meta" : {
@@ -905,6 +1059,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -922,6 +1079,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T12:19:33Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -943,6 +1103,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -957,6 +1120,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T12:17:42Z"
@@ -980,6 +1146,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T17:52:39Z"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         } ]
@@ -994,6 +1163,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -1011,6 +1183,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -1033,6 +1208,9 @@
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T17:48:39Z"
         }, {
@@ -1053,6 +1231,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T17:46:15Z"
         } ]
@@ -1069,6 +1250,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T12:12:37Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
@@ -1089,6 +1273,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T17:42:02Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -1104,6 +1291,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T17:40:55Z"
         } ]
@@ -1118,6 +1308,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -1135,6 +1328,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T17:31:59Z"
         }, {
@@ -1162,6 +1358,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -1179,6 +1378,9 @@
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -1199,6 +1401,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T14:51:40Z"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         } ]
@@ -1213,6 +1418,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -1235,6 +1443,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -1249,6 +1460,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T18:31:07Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
@@ -1269,6 +1483,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -1286,6 +1503,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -1298,6 +1518,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -1323,6 +1546,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T18:27:05Z"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         } ]
@@ -1342,6 +1568,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -1354,6 +1583,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T18:24:53Z"
         }, {
@@ -1371,6 +1603,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -1393,6 +1628,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T18:22:49Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -1405,6 +1643,9 @@
           "xrefs" : [ "DDB:pf" ]
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T14:39:01Z"
         }, {
@@ -1425,6 +1666,9 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T14:36:33Z"
         } ]
@@ -1441,6 +1685,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T18:20:57Z"
@@ -1461,6 +1708,9 @@
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
         }, {
@@ -1483,6 +1733,9 @@
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2021-02-25T18:17:45Z"
         }, {
@@ -1505,6 +1758,9 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "pfey"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "dicty_strain_property"
         } ]
       },
       "type" : "CLASS",
@@ -1531,11 +1787,11 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000053"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000029",
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000006",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000006",
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000029",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
     }, {
@@ -1571,6 +1827,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000055"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000038",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000015",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
@@ -1578,10 +1838,6 @@
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000014",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000011"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000038",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000022",
       "pred" : "is_a",
@@ -1615,13 +1871,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000074"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000057",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000054"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000036",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000034"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000057",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000054"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000065",
       "pred" : "is_a",
@@ -1675,13 +1931,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000060"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000042",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000052"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000032",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000042",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000052"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000067",
       "pred" : "is_a",
@@ -1735,13 +1991,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000060"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000072",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000071"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000079",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000072",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000071"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000044",
       "pred" : "is_a",
@@ -1867,16 +2123,28 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000052"
     } ],
-    "id" : "http://purl.obolibrary.org/obo/TEMP",
+    "id" : "http://purl.obolibrary.org/obo/ddstrainprop.owl",
     "meta" : {
       "subsets" : [ ],
       "xrefs" : [ ],
       "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/description",
+        "val" : "A structured controlled vocabulary of various strain properties of the slime-mould Dictyostelium discoideum."
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/title",
+        "val" : "Dicty Strain Property Ontology (DDPHENO)"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "http://creativecommons.org/publicdomain/zero/1.0/"
+      }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#auto-generated-by",
         "val" : "OBO-Edit 2.2"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
         "val" : "25:02:2021 19:11"
+      }, {
+        "pred" : "http://www.geneontology.org/formats/oboInOwl#default-namespace",
+        "val" : "dicty_strain_property"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
