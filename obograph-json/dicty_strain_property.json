@@ -1787,11 +1787,11 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000053"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000006",
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000029",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000029",
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000006",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
     }, {
@@ -1891,13 +1891,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000006"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000033",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000031"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000012",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000033",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000031"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000066",
       "pred" : "is_a",
@@ -1955,15 +1955,15 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000054"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000034",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000010",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000011"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000011",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000034",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
     }, {
@@ -2031,11 +2031,11 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000052"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000076",
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000053",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000053",
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000076",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
     }, {
@@ -2111,11 +2111,11 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000083",
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000060",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000060",
+      "sub" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000083",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/DDSTRAIN_0000001"
     }, {
@@ -2132,7 +2132,7 @@
         "val" : "A structured controlled vocabulary of various strain properties of the slime-mould Dictyostelium discoideum."
       }, {
         "pred" : "http://purl.org/dc/elements/1.1/title",
-        "val" : "Dicty Strain Property Ontology (DDPHENO)"
+        "val" : "Dicty Strain Property Ontology (DDSTRAIN)"
       }, {
         "pred" : "http://purl.org/dc/terms/license",
         "val" : "http://creativecommons.org/publicdomain/zero/1.0/"
