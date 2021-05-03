@@ -1,7 +1,7 @@
 format-version: 1.2
 date: 13:08:2020 12:29
 saved-by: Sidd
-auto-generated-by: OBO-Edit 2.2
+auto-generated-by: OBO-Edit 2.2.1
 default-namespace: Dicty Phenotypes
 property_value: http://purl.org/dc/elements/1.1/description "A structured controlled vocabulary of phenotypes of the slime-mould Dictyostelium discoideum." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Dicty Phenotype Ontology (DDPHENO)" xsd:string
