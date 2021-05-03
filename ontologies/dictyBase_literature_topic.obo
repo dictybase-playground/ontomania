@@ -7,6 +7,7 @@ property_value: http://purl.org/dc/elements/1.1/description "A structured contro
 property_value: http://purl.org/dc/elements/1.1/title "Dicty literature topic (DDPHENO)" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/publicdomain/zero/1.0/
 ontology: ddlit
+# first conversion
 
 [Term]
 id: DDLIT:0000000
