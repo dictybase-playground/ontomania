@@ -1,7 +1,7 @@
 format-version: 1.2
 date: 01:09:2020 16:45
 saved-by: Siddhartha Basu 
-auto-generated-by: OBO-Edit 2.2
+auto-generated-by: OBO-Edit 2.2.1
 default-namespace: Dictyostelium_discoideum_anatomy
 property_value: http://purl.org/dc/elements/1.1/description "A structured controlled vocabulary of anatomies of the slime-mold Dictyostelium discoideum." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Dicty Anantomy Ontology (DDANAT)" xsd:string
