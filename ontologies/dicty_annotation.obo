@@ -4,6 +4,7 @@ saved-by: Siddhartha Basu
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: dicty_annotation
 ontology: ddanno
+property_value: http://purl.org/dc/terms/license http://creativecommons.org/publicdomain/zero/1.0/
 
 [Term]
 id: DDANNO:0000001
