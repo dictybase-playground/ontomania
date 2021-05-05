@@ -4,6 +4,7 @@ saved-by: Petra
 auto-generated-by: OBO-Edit 2.2.1
 default-namespace: Dd Mutagenesis Method
 ontology: ddmumet
+property_value: http://purl.org/dc/terms/license http://creativecommons.org/publicdomain/zero/1.0/
 
 [Term]
 id: DDMUMET:0000001
