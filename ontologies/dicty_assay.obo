@@ -1,9 +1,12 @@
 format-version: 1.2
 date: 11:09:2020 18:41
-saved-by: Sidd
-auto-generated-by: OBO-Edit 2.2
+saved-by: Siddhartha Basu
+auto-generated-by: OBO-Edit 2.2.1
 default-namespace: Dictyostelium Assay
 ontology: ddassay
+property_value: http://purl.org/dc/elements/1.1/description "A structured controlled vocabulary of various assay of the slime-mold Dictyostelium discoideum." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Dicty assay (DDASSAY)" xsd:string
+property_value: http://purl.org/dc/terms/license http://creativecommons.org/publicdomain/zero/1.0/
 
 [Term]
 id: DDASSAY:0000001

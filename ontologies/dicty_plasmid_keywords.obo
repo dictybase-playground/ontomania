@@ -1,9 +1,12 @@
 format-version: 1.2
 date: 07:10:2019 09:33
 saved-by: Sidd
-auto-generated-by: OBO-Edit 2.2
+auto-generated-by: OBO-Edit 2.2.1
 default-namespace: plasmid_keywords
 ontology: ddplasmidkey
+property_value: http://purl.org/dc/elements/1.1/description "A structured controlled vocabulary of plasmid keywords of the slime-mold Dictyostelium discoideum." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Dicty Plasmid keywords Ontology (DDANAT)" xsd:string
+property_value: http://purl.org/dc/terms/license http://creativecommons.org/publicdomain/zero/1.0/
 
 [Term]
 id: DDPLASMIDKEY:0000001

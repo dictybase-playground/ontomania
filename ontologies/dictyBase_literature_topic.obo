@@ -1,6 +1,6 @@
 format-version: 1.2
 date: 23:01:2018 13:57
-saved-by: Sidd
+saved-by: Siddhartha Basu
 auto-generated-by: OBO-Edit 2.2
 default-namespace: dictyBase_literature_topic
 property_value: http://purl.org/dc/elements/1.1/description "A structured controlled vocabulary of literature of the slime-mold Dictyostelium discoideum." xsd:string

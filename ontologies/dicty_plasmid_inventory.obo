@@ -1,9 +1,12 @@
 format-version: 1.2
 date: 26:01:2019 16:57
 saved-by: Sidd
-auto-generated-by: OBO-Edit 2.2
+auto-generated-by: OBO-Edit 2.2.1
 default-namespace: plasmid_inventory
 ontology: plasmidinvent
+property_value: http://purl.org/dc/terms/license http://creativecommons.org/publicdomain/zero/1.0/
+property_value: http://purl.org/dc/elements/1.1/description "A structured controlled vocabulary of plasmid inventory of the slime-mold Dictyostelium discoideum." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Dicty plasmid inventory (PLASMIDINVENT)" xsd:string
 
 [Term]
 id: PLASMIDINVENT:0000001
